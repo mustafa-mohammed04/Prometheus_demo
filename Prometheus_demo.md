@@ -71,19 +71,6 @@ sudo chown prometheus:prometheus /usr/local/bin/promtool
 ``` bash
 sudo vi /etc/systemd/system/prometheus.service
 ```
-## go to this file Prometheus service File
-## Finally start and enable Prometheus service
-
-``` bash
-sudo systemctl daemon-reload
-sudo systemctl start prometheus
-sudo systemctl status prometheus
-sudo systemctl enable prometheus
-```
-
-
-## Note: The Prometheus listens on HTTP port 9090 by default
-## Prometheus Service
 ``` bash
 [Unit]
 Description=Prometheus
@@ -103,3 +90,16 @@ ExecStart=/usr/local/bin/prometheus \
 [Install]
 WantedBy=multi-user.target
 ```
+
+## Finally start and enable Prometheus service
+
+``` bash
+sudo systemctl daemon-reload
+sudo systemctl start prometheus
+sudo systemctl status prometheus
+sudo systemctl enable prometheus
+```
+
+
+## Note: The Prometheus listens on HTTP port 9090 by default
+
