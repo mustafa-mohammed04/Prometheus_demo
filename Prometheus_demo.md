@@ -100,6 +100,10 @@ sudo systemctl status prometheus
 sudo systemctl enable prometheus
 ```
 
-
+## Location of prometheus
+``` bash
+pwd
+/tmp/prometheus-2.35.0.linux-amd64
+```
 ## Note: The Prometheus listens on HTTP port 9090 by default
 
